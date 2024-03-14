@@ -1,0 +1,20 @@
+name: First Workflow
+on:
+  workflow_call:
+    username:
+      description: 'A username passed from the caller workflow'
+      default: 'john-doe'
+      required: true
+      type: string
+    test_variable:
+      description: 'A string input'
+      required: false
+      type: string
+job:
+  first_job:
+    runs_on: ubuntu-latest
+    name: print variables
+    steps:
+       - name: Printing variables
+         shell: bash
+         run: echo ${{ input.test_variable}}
