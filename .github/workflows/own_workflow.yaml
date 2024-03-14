@@ -1,6 +1,6 @@
 name: First Workflow
 on:
-  workflow_call:
+  workflow_dispatch:
     username:
       description: 'A username passed from the caller workflow'
       default: 'john-doe'
