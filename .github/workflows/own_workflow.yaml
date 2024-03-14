@@ -13,7 +13,6 @@ on:
 jobs:
   first_job:
     runs_on: ubuntu-latest
-    name: print variables
     steps:
        - name: Printing variables
          shell: bash
