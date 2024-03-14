@@ -17,4 +17,4 @@ jobs:
     steps:
        - name: Printing variables
          shell: bash
-         run: echo ${{ input.testvariable}}
+         run: echo ${{ inputs.testvariable}}
