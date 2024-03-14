@@ -17,7 +17,7 @@ jobs:
     steps:
        - name: Printing variables
          shell: bash
-         run: echo ${{ input.testvariable}}
+         run: echo ${{ inputs.testvariable}}
        - name: Printing uptime and hostname
          shell: bash
          run: uptime;hostname
