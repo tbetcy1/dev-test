@@ -7,7 +7,7 @@ on:
         default: 'john-doe'
         required: true
         type: string
-      test_variable:
+      testvariable:
         description: 'A string input'
         required: false
         type: string
@@ -17,4 +17,4 @@ jobs:
     steps:
        - name: Printing variables
          shell: bash
-         run: echo ${{ input.test_variable}}
+         run: echo ${{ input.testvariable}}
