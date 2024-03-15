@@ -1,0 +1,15 @@
+name: Ansible check
+on:
+  workflow_dispatch:
+    inputs:
+      variable_test:
+        description: 'Type a string'
+        type: string
+        required: true
+jobs:
+ Install_ansible:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Installing Ansible
+      shell: bash
+      run: sudo apt update;sudo apt install software-properties-common;sudo add-apt-repository --yes --update ppa:ansible/ansible;sudo apt install ansible
