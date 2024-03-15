@@ -1,0 +1,4 @@
+# Lines starting with '#' are comments.
+
+# Assign the owner for the entire repository
+*       @tbetcy1
