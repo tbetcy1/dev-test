@@ -7,8 +7,14 @@ on:
         type: string
         required: true
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cheking if ansible is present 
+        run: ansible --version
   job_name_install_check_ansible:
    runs-on: ubuntu-latest
+   needs: check
    steps:
     - name: Installing Ansible
       shell: bash
